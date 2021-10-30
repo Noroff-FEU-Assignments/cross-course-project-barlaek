@@ -29,7 +29,7 @@ header {
 }
 
 .logo_image {
-  max-width: 150px;
+  max-width: 100px;
 }
 
 nav,
@@ -101,26 +101,28 @@ header a {
   background-image: url("../images/home-page-banner.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: left;
-  min-height: 70vh;
+  background-position-x: center;
+  background-position-y: center;
+  min-height: 90vh;
   position: relative;
 }
 
 .welcome-content {
   position: absolute;
   text-align: center;
-  top: 250px;
-  left: 100px;
+  top: 300px;
+  left: 540px;
 }
 
 h1 {
   color: #fff;
   padding: 10px;
+  font-size: 4em;
 }
 
 .product_nest {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 20px;
     max-width: 1000px;
     margin: 50px;
@@ -133,7 +135,7 @@ h1 {
     border-color: #076871
   }
 
-  h2 {
+  .products h2 {
       margin: 50px;
       padding: 0px;;
   }
@@ -142,14 +144,17 @@ h1 {
       background-image: url("../images/about-us.jpg");
       background-size: cover;
       background-repeat: no-repeat;
-      background-position-x: left;
-      min-height: 50vh;
+      background-position-x: right;
+      background-position-y: top;
+      min-height: 70vh;
       position: relative;
   }
 
   .about-us-content {
-      position: sticky;
+      position: absolute;
       text-align: center;
+      left: 400px;
+      top: 100px;
   }
 
   .about-us-content {
