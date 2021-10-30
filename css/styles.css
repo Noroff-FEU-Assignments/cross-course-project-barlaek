@@ -1,0 +1,10 @@
+/* Global Styles */
+
+@font-face {
+    font-family: "Roboto Slab";
+    src: url("../fonts/RobotoSlab-Black.ttf") format("black");
+}
+
+body {
+    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
