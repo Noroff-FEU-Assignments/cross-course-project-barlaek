@@ -1,18 +1,157 @@
 /* Global Styles */
 
 @font-face {
-    font-family: "Roboto Slab";
-    src: url("../fonts/RobotoSlab-Black.ttf") format("ttf");
+  font-family: "Roboto Slab";
+  src: url("../fonts/RobotoSlab-Black.ttf") format("ttf");
 }
 
 body {
-    font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+  min-height: 100vh;
+  margin: 0px;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 
-img .logo {
-    max-width: 50px
+h1,
+h2 {
+  font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
 }
 
-nav {
-    display: none;
+header {
+  display: flex;
+  align-items: center;
 }
+
+.logo {
+  width: 100%;
+  margin-left: 50px;
+}
+
+.logo_image {
+  max-width: 150px;
+}
+
+nav,
+#hamburger-menu {
+  display: none;
+}
+
+.hamburger-label {
+  float: right;
+  color: #076871;
+  padding: 0px 50px;
+  font-size: 2em;
+  display: block;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+
+nav ul {
+  padding: 0px;
+}
+
+nav li {
+  display: block;
+}
+
+nav a {
+  padding: 10px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+header,
+footer {
+  background-color: #fff8ef;
+  color: #076871;
+}
+
+/* Links */
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header a {
+  padding: 10px;
+  color: #076871;
+}
+
+.cta {
+  background-color: #076871;
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  border-radius: 10px;
+}
+
+/* Home Page */
+
+.welcome {
+  background-image: url("../images/home-page-banner.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: left;
+  min-height: 70vh;
+  position: relative;
+}
+
+.welcome-content {
+  position: absolute;
+  text-align: center;
+  top: 250px;
+  left: 100px;
+}
+
+h1 {
+  color: #fff;
+  padding: 10px;
+}
+
+.product_nest {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 20px;
+    max-width: 1000px;
+    margin: 50px;
+  }
+
+  .example_product {
+    width: 100%;
+    border: solid;
+    border-width: medium;
+    border-color: #076871
+  }
+
+  h2 {
+      margin: 50px;
+      padding: 0px;;
+  }
+
+  .about-us {
+      background-image: url("../images/about-us.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position-x: left;
+      min-height: 50vh;
+      position: relative;
+  }
+
+  .about-us-content {
+      position: sticky;
+      text-align: center;
+  }
+
+  .about-us-content {
+      color: #fff;
+  }
