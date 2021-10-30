@@ -2,9 +2,17 @@
 
 @font-face {
     font-family: "Roboto Slab";
-    src: url("../fonts/RobotoSlab-Black.ttf") format("black");
+    src: url("../fonts/RobotoSlab-Black.ttf") format("ttf");
 }
 
 body {
     font-family: "Roboto", Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img .logo {
+    max-width: 50px
+}
+
+nav {
+    display: none;
 }
