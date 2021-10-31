@@ -260,16 +260,16 @@ footer {
 
   .about-us-content {
     top: 100px;
-    left: 800px;
+    left: 280px;
     transform: none;
   }
 
   .about-us-content h2 {
-    font-size: 3em;
+    font-size: 2em;
   }
 }
 
-@media (min-width: 1100px) {
+@media (min-width: 1400px) {
   .welcome-content {
     top: 300px;
     left: 540px;
@@ -277,5 +277,15 @@ footer {
   }
   h1 {
     font-size: 4em;
+  }
+
+  .about-us-content {
+    top: 100px;
+    left: 800px;
+    transform: none;
+  }
+
+  .about-us-content h2 {
+    font-size: 3em;
   }
 } ;
