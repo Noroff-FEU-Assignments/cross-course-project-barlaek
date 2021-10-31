@@ -19,10 +19,11 @@ h2 {
 header {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .logo {
-  width: 100%;
+  width: 150px;
   margin-left: 50px;
 }
 
@@ -36,7 +37,6 @@ nav,
 }
 
 .hamburger-label {
-  float: right;
   color: #076871;
   padding: 0px 50px;
   font-size: 2em;
@@ -47,12 +47,21 @@ nav,
   display: block;
 }
 
+nav {
+  position: fixed;
+  top: 46.5px;
+  background: #fff8ef;
+  z-index: 1000;
+  right: 0px;
+}
+
 nav ul {
   padding: 0px;
 }
 
 nav li {
   display: block;
+  padding: 20px 30px;
 }
 
 nav a {
@@ -192,11 +201,33 @@ footer {
   padding: 10px;
 }
 
-/* Media Querie */
+/* Media Queries */
 
 @media (min-width: 600px) {
   .featured {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  header {
+    justify-content: start;
+  }
+
+  nav {
+    display: block;
+    position: static;
+  }
+
+  nav li {
+    display: inline-block;
+    padding: 0px;
+  }
+
+  header label {
+    display: none;
+  }
+
+  .hamburger-label {
+    display: none;
   }
 }
 
@@ -205,9 +236,15 @@ footer {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .welcome {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
   .welcome-content {
     top: 300px;
     left: 540px;
+    transform: none;
   }
 
   h1 {
@@ -222,6 +259,7 @@ footer {
   .about-us-content {
     top: 100px;
     left: 800px;
+    transform: none;
   }
 
   .about-us-content h2 {
