@@ -14,6 +14,7 @@ body {
 h1,
 h2 {
   font-family: "Roboto Slab", Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 header {
@@ -146,8 +147,9 @@ h1 {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1000px;
-  margin: 0px auto 20px auto;
+  margin: auto;
   grid-gap: 20px;
+  padding: 20px;
 }
 
 .featured h2 {
@@ -242,13 +244,13 @@ footer {
   }
 
   .welcome-content {
-    top: 300px;
-    left: 540px;
+    top: 280px;
+    left: 100px;
     transform: none;
   }
 
   h1 {
-    font-size: 4em;
+    font-size: 3em;
   }
 
   .about-us {
@@ -264,5 +266,16 @@ footer {
 
   .about-us-content h2 {
     font-size: 3em;
+  }
+}
+
+@media (min-width: 1100px) {
+  .welcome-content {
+    top: 300px;
+    left: 540px;
+    transform: none;
+  }
+  h1 {
+    font-size: 4em;
   }
 } ;
