@@ -69,17 +69,17 @@ footer {
   color: #076871;
 }
 
-.products {
+.featured {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.products img {
+.featured img {
   grid-column: -1/1;
 }
 
-.products h3,
-.products p {
+.featured h3,
+.featured p {
   grid-column: 1;
 }
 
@@ -114,7 +114,7 @@ header a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: center;
+  background-position-y: top;
   min-height: 90vh;
   position: relative;
 }
@@ -122,29 +122,30 @@ header a {
 .welcome-content {
   position: absolute;
   text-align: center;
-  top: 300px;
-  left: 540px;
+  top: 200px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 h1 {
   color: #fff;
   padding: 10px;
-  font-size: 4em;
+  font-size: 2em;
 }
 
-.products {
+.featured {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   max-width: 1000px;
-  margin: auto;
-  grid-gap: 50px 10px;
+  margin: 0px auto 20px auto;
+  grid-gap: 20px;
 }
 
-.products h2 {
+.featured h2 {
   grid-column: -1/1;
 }
 
-.products img {
+.featured img {
   width: 100%;
 }
 
@@ -159,7 +160,7 @@ h1 {
   background-image: url("../images/about-us.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-x: right;
+  background-position-x: center;
   background-position-y: top;
   min-height: 70vh;
   position: relative;
@@ -168,13 +169,14 @@ h1 {
 .about-us-content {
   position: absolute;
   text-align: center;
-  left: 800px;
+  left: 50%;
   top: 100px;
   padding: 5px;
+  transform: translateX(-50%);
 }
 
 .about-us-content h2 {
-  font-size: 3em;
+  font-size: 1, 5em;
 }
 
 .about-us-content {
@@ -184,3 +186,45 @@ h1 {
 .cta-about-us {
   font-size: 1em;
 }
+
+footer {
+  text-align: center;
+  padding: 10px;
+}
+
+/* Media Querie */
+
+@media (min-width: 600px) {
+  .featured {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 800px) {
+  .featured {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .welcome-content {
+    top: 300px;
+    left: 540px;
+  }
+
+  h1 {
+    font-size: 4em;
+  }
+
+  .about-us {
+    background-position-x: center;
+    background-position-y: center;
+  }
+
+  .about-us-content {
+    top: 100px;
+    left: 800px;
+  }
+
+  .about-us-content h2 {
+    font-size: 3em;
+  }
+} ;
