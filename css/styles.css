@@ -121,42 +121,51 @@ h1 {
 }
 
 .product_nest {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
-    max-width: 1000px;
-    margin: 50px;
-  }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  max-width: 1000px;
+  margin: 50px;
+}
 
-  .example_product {
-    width: 100%;
-    border: solid;
-    border-width: medium;
-    border-color: #076871
-  }
+.example_product {
+  width: 100%;
+  border: solid;
+  border-width: medium;
+  border-color: #076871;
+}
 
-  .products h2 {
-      margin: 50px;
-      padding: 0px;;
-  }
+.products h2 {
+  margin: 50px;
+  padding: 0px;
+}
 
-  .about-us {
-      background-image: url("../images/about-us.jpg");
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position-x: right;
-      background-position-y: top;
-      min-height: 70vh;
-      position: relative;
-  }
+.about-us {
+  background-image: url("../images/about-us.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: top;
+  min-height: 70vh;
+  position: relative;
+}
 
-  .about-us-content {
-      position: absolute;
-      text-align: center;
-      left: 400px;
-      top: 100px;
-  }
+.about-us-content {
+  position: absolute;
+  text-align: center;
+  left: 800px;
+  top: 100px;
+  padding: 5px;
+}
 
-  .about-us-content {
-      color: #fff;
-  }
+.about-us-content h2 {
+  font-size: 3em;
+}
+
+.about-us-content {
+  color: #fff;
+}
+
+.cta-about-us {
+  font-size: 1em;
+}
