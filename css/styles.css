@@ -50,7 +50,7 @@ nav,
 
 nav {
   position: fixed;
-  top: 46.5px;
+  top: 47px;
   background: #fff8ef;
   z-index: 1000;
   right: 0px;
@@ -254,8 +254,7 @@ footer {
   }
 
   .about-us {
-    background-position-x: center;
-    background-position-y: center;
+    background-position: center;
   }
 
   .about-us-content {
