@@ -203,6 +203,62 @@ footer {
   padding: 10px;
 }
 
+/* About Page */
+
+/* Contact Us */
+
+.contact {
+  padding-top: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.contact-statement p {
+  text-align: center;
+  padding: 10px;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+.form-wrapper {
+  display: flex;
+}
+
+.form-wrapper > * {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Products */
+
+.all-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1000px;
+  margin: auto;
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.all-products h2 {
+  grid-column: -1/1;
+}
+
+
 /* Media Queries */
 
 @media (min-width: 600px) {
