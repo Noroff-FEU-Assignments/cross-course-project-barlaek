@@ -258,6 +258,15 @@ textarea {
   grid-column: -1/1;
 }
 
+/* Product Page */
+
+.product-page {
+  display: grid;
+  grid-template-columns: repeat (2, 1fr);
+  max-width: 1000px;
+  margin: auto
+}
+
 
 /* Media Queries */
 
