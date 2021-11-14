@@ -143,7 +143,8 @@ h1 {
   font-size: 2em;
 }
 
-.featured {
+.featured,
+.all-products {
   display: grid;
   grid-template-columns: 1fr;
   max-width: 1000px;
@@ -213,7 +214,7 @@ footer {
 
 .about-resources {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr;
   text-align: center;
   max-width: 1000px;
   margin: auto;
@@ -246,7 +247,9 @@ textarea {
 }
 
 .form-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
 }
 
 .form-wrapper > * {
@@ -264,15 +267,6 @@ textarea {
 
 /* Products */
 
-.all-products {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 1000px;
-  margin: auto;
-  grid-gap: 20px;
-  padding: 20px;
-}
-
 .all-products h2 {
   grid-column: -1/1;
 }
@@ -281,10 +275,11 @@ textarea {
 
 .product-page {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   max-width: 1000px;
   margin: auto;
   grid-gap: 20px;
+  padding: 20px;
   padding-bottom: 50px;
 }
 
@@ -293,18 +288,19 @@ textarea {
 }
 
 .cta-product-page {
-  display:block;
+  display: block;
   width: 100px;
   margin: auto;
   text-align: center;
   margin-top: 50px;
 }
 
-
 /* Media Queries */
 
 @media (min-width: 600px) {
-  .featured {
+  .featured,
+  .all-products,
+  .product-page {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -332,7 +328,8 @@ textarea {
 }
 
 @media (min-width: 800px) {
-  .featured {
+  .featured,
+  .all-products {
     grid-template-columns: repeat(3, 1fr);
   }
 
@@ -363,6 +360,14 @@ textarea {
 
   .about-us-content h2 {
     font-size: 2em;
+  }
+
+  .about-resources {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .form-wrapper {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
