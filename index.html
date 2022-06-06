@@ -1,87 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rainydays | Home</title>
-  <link href="css/styles.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/e57960e4ca.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainydays-practice repo</title>
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e57960e4ca.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <a href="index.html"><img src="images/Rainydays_m_fjell.png" alt="logo-w-mountain" class="logo_image"/></a>
-    </div>
-    <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
-    <input type="checkbox" id="hamburger-menu">
-    <nav>
-      <ul>
-        <li><a href="../products/mensjackets.html">Mens</a></li>
-        <li><a href="../products/womensjackets.html">Womens</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>  
-  </header>
-  <main>
-    <section class="welcome">
-      <div class="welcome-content">
-        <h1>Pushing the Comfort Zone</h1>
-      <a href="products/jackets.html" class="cta">Shop Jackets</a>
-      </div>
-    </section>
-    <section class="featured">
-      <h2>New Arrivals</h2>
-      <div class="product__image">
-        <a href="../products/orange-shell-jacket.html"><img src="images/product-img-orange-jacket.jpg" alt="orange jacket" class="example_product" /></a>
-        <h3>Orange Jacket</h3>
-        <p>Shell Family</p>
-        <p>$400</p>
-      </div>
-      <div class="product__image">
-        <a href="../products/orange-shell-jacket.html"><img src="images/product-img-orange-jacket.jpg" alt="orange jacket"  class="example_product"/></a>
-        <h3>Orange Jacket</h3>
-        <p>Shell Family</p>
-        <p>$400</p>
-      </div>
-      <div class="product__image">
-        <a href="../products/orange-shell-jacket.html"><img src="images/product-img-orange-jacket.jpg" alt="orange jacket" class="example_product"/></a>
-        <h3>Orange Jacket</h3>
-        <p>Shell Family</p>
-        <p>$400</p>
-      </div>
-      <div class="product__image">
-        <a href="../products/orange-shell-jacket.html"><img src="images/product-img-orange-jacket.jpg" alt="orange jacket" class="example_product" /></a>
-        <h3>Orange Jacket</h3>
-        <p>Shell Family</p>
-        <p>$400</p>
-      </div>
-      <div class="product__image">
-        <a href="../products/orange-shell-jacket.html"><img src="images/product-img-orange-jacket.jpg" alt="orange jacket"  class="example_product"/></a>
-        <h3>Orange Jacket</h3>
-        <p>Shell Family</p>
-        <p>$400</p>
-      </div>
-      <div class="product__image">
-        <a href="../products/orange-shell-jacket.html"><img src="images/product-img-orange-jacket.jpg" alt="orange jacket" class="example_product"/></a>
-        <h3>Orange Jacket</h3>
-        <p>Shell Family</p>
-        <p>$400</p>
-      </div>
-    </section>
-    <section class="about-us">
-      <div class="about-us-content">
-        <h2>Environment</h2>
-        <h2>Protection</h2>
-        <h2>Comfort Zone</h2>
-        <div class="cta-about-us">
-          <a href="about.html" class ="cta">Learn More</a>
+    <header>
+        <div class="banner-container">
+            <a href="index.html">
+                <img src="images/Rainydays_m_fjell.png" alt="logo with mountain stretching over text: Rainydays" class="logo-img">
+            </a>
+            <div class="nav">
+                <label class="hamburger-label" for="hamburger-menu"><i class="fas fa-bars"></i></label>
+                <input type="checkbox" id="hamburger-menu">
+                <nav>
+                    <ul>
+                        <li><a href="mens-jackets.html">Men</a></li>
+                        <li><a href="womens-jackets.html">Women</a></li>
+                        <li><a href="about-us.html">About</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
-      </div>
-    </section>
-  </main>
-  <footer>Copyright &copy;</footer>
+    </header>
+    <main>
+        <div class="hero-content">
+            <img src="images/home-page-banner-oppdatert-v2.jpg" alt="person with rainjacket looking across lake" class="hero-content-banner">
+            <div class="hero-text">
+                <h1>Pushing the comfort zone</h1>
+                <a href="mens-jackets.html" class="cta">Men's</a><a href="womens-jackets.html" class="cta">Women's</a>
+            </div>
+        </div>
+        <div class="best-sellers">
+            <h2>Our best sellers</h2>
+            <div class="all-jackets">
+                <!-- <div class="dis-jack"></div> -->
+                <!-- <div class="dis-jack">
+                    <a href="product.html">
+                        <img src="images/product-img-orange-jacket-oppdatert.jpg" alt="orange shell-jacket" class="example-product">
+                    </a>
+                    <h3>Orange shell jacket</h3>
+                    <p>$400</p>
+                </div>
+                <div class="dis-jack">
+                    <a href="product.html">
+                        <img src="images/product-img-orange-jacket-oppdatert.jpg" alt="orange shell-jacket" class="example-product">
+                    </a>
+                    <h3>Orange shell jacket</h3>
+                    <p>$400</p>
+                </div>
+                <div class="dis-jack">
+                    <a href="product.html">
+                        <img src="images/product-img-orange-jacket-oppdatert.jpg" alt="orange shell-jacket" class="example-product">
+                    </a>
+                    <h3>Orange shell jacket</h3>
+                    <p>$400</p>
+                </div>
+                <div class="dis-jack">
+                    <a href="product.html">
+                        <img src="images/product-img-orange-jacket-oppdatert.jpg" alt="orange shell-jacket" class="example-product">
+                    </a>
+                    <h3>Orange shell jacket</h3>
+                    <p>$400</p> -->
+                </div>
+            </div>
+        </div>
+        <div class="categories">
+            <div class="categories-container">
+                <div class="jack-cat-cont">
+                    <img src="images/about-us-v3.jpg" alt="man and child wearing raincoats" class="cat-pic">
+                    <div class="cat-cta">
+                        <a href="all-jackets.html" class="cta cat-btn">Rain jackets</a>
+                    </div>
+                </div>
+                <div class="acc-cont">
+                    <img src="images/pexels-tima-miroshnichenko-7010134-v2.jpg" alt="man and woman posing with hike-wear" class="cat-pic">
+                    <div class="cat-cta">
+                        <a href="accessories.html" class="cta cat-btn">Accessories</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-and-more"></div>
+    </main>
+    <footer>
+        <p>Copyright &copy;</p>
+    </footer>
+    <script src="js/products.js"></script>
 </body>
 </html>
